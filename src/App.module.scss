@@ -1,0 +1,75 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.input {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  background-color: azure;
+}
+
+.dice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pending {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.dieButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}
+
+.list {
+  margin: 300px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  overflow-y: scroll;
+}
+
+.cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &:nth-child(2n) {
+    background-color: lightgray;
+  }
+}
+
+.cellNumber {
+  font-size: 36px;
+}
+
+.deleteButton {
+  font-size: 36px;
+}
+
+.subcell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  flex: 1 0 0;
+}
+
+.clear {
+  display: flex;
+}
+
+.clearButton {
+  display: flex;
+  font-size: 18px;
+}
